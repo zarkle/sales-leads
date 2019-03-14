@@ -2,9 +2,8 @@
   "name": "sales-leads",
   "version": "1.0.0",
   "description": "Sales Leads",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node ./bin/www",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
