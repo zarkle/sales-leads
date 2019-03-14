@@ -2,8 +2,9 @@
   "name": "sales-leads",
   "version": "1.0.0",
   "description": "Sales Leads",
-  "main": "server.js",
+  "main": "app.js",
   "scripts": {
+    "start": "node ./bin/www",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,6 +20,7 @@
   "dependencies": {
     "debug": "^4.1.1",
     "express": "^4.16.4",
-    "http-errors": "^1.7.2"
+    "http-errors": "^1.7.2",
+    "pug": "^2.0.3"
   }
 }
