@@ -1,0 +1,19 @@
+{
+  "name": "sales-leads",
+  "version": "1.0.0",
+  "description": "Sales Leads",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zarkle/sales-leads.git"
+  },
+  "author": "Beverly Pham",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zarkle/sales-leads/issues"
+  },
+  "homepage": "https://github.com/zarkle/sales-leads#readme"
+}
