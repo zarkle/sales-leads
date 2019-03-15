@@ -1,17 +1,24 @@
 {
-  "extends": ["airbnb-base","plugin:jest/recommended"],
-  "parser": "babel-eslint",
-  "plugins": ["jest"],
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "ecmaVersion": 6
+  },
   "rules": {
     "arrow-body-style": "off",
+    "eol-last": "error",
+    "eqeqeq": ["error", "always"],
     "global-require": "off",
     "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
+    "indent": ["error", 2],
     "linebreak-style": "off",
     "no-multi-assign": "off",
     "no-param-reassign": ["error", { "props": false }],
     "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+    "no-template-curly-in-string": "error",
     "no-trailing-spaces":"off",
+    "no-undefined": "off",
     "no-underscore-dangle": "off",
+    "quotes": ["warn", "single", {"allowTemplateLiterals": true}],
     "strict": "off"
   }
 }
