@@ -1,6 +1,6 @@
 module.exports = {
   "development": {
-    "username": "root",
+    "username": null,
     "password": null,
     "database": "express",
     "host": "127.0.0.1",
@@ -8,14 +8,14 @@ module.exports = {
     "port": 5432,
   },
   "test": {
-    "username": "root",
+    "username": null,
     "password": null,
     "database": "database_test",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
+    "username": null,
     "password": null,
     "database": "database_production",
     "host": "127.0.0.1",
