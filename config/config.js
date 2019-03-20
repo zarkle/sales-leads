@@ -2,9 +2,10 @@ module.exports = {
   "development": {
     "username": "root",
     "password": null,
-    "database": "database_development",
+    "database": "express",
     "host": "127.0.0.1",
-    "dialect": "mysql"
+    "dialect": "postgres",
+    "port": 5432,
   },
   "test": {
     "username": "root",
