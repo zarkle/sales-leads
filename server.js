@@ -1,6 +1,7 @@
 const app = require('./app');
 const debug = require('debug')('sales-leads:server');
 const http = require('http');
+const models = require('./models')
 
 // get port from environment variables
 const port = normalizePort(process.env.PORT || '3000');
@@ -10,9 +11,11 @@ app.set('port', port);
 const server = http.createServer(app);
 
 // Listen on port, on all network interfaces
-server.listen(port);
-server.on('error', onError);
-server.on('listening', onListening);
+return models.sequelize.sync().then( result => {
+  server.listen(port);
+  server.on('error', onError);
+  server.on('listening', onListening);
+})
 
 // normalize a port into a number, string, or false
 function normalizePort(val) {
